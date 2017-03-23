@@ -1,0 +1,318 @@
+/* Styles specific to the production information pages (/productions/xxx/index.html) */
+
+/* This style based on .text1 from the 'original' style sheet */
+body {
+/*  background-color: #222222; */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: #A2A2A2;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: #A2A2A2;
+  text-decoration: underline;
+}
+
+.sub-content {
+  z-index: 1;
+  padding-top: 0;
+}
+
+h1 {
+  display: block;
+/*  margin: 0px 5px 0px 0px;
+  float: left;
+  height: 348px;
+  width: 130px; */
+  margin: 0;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 130px;
+  font-size: 16px;
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  padding: 9px 5px 0 0;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: 1;
+}
+
+h1.two-lines {
+  padding-top: 0;
+/*  height: 357px; */
+}
+
+h1#pinter {
+  font-size: 15px;
+}
+
+h1#pinter .small {
+  font-size: 13px;
+}
+
+h2 {
+/*  position: absolute;
+  top: 10px;
+  left: 148px; */
+/*  float: left; */
+  margin: 12px 0 12px 140px;
+  padding: 0 0 0 0;
+  font-size: 13px;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  color: #aaaaaa;
+  z-index: 2;
+}
+
+h2 small {
+  font-size: 12px;
+}
+
+/*
+.border {
+  display: block;
+  display: hidden;
+  border: solid #a2a2a2;
+  border-width: 1px 0 0;
+  width: 563px;
+  height: 0px;
+}
+
+.border.top {
+  position: absolute;
+  top: 40px;
+  left: 9px;
+}
+
+.border.bottom {
+  position: absolute;
+  top: 351px;
+  left: 9px;
+}
+
+.info-box {
+  position: absolute;
+  top: 41px;
+  left: 9px;
+  width: 582px;
+  height: 310px;
+  overflow: auto;
+  padding: 0px;
+  border: solid #a2a2a2;
+  border-width: 0px 0;
+}
+*/
+
+.cast-and-crew {
+  display: block;
+  position: relative;
+/*  top: 0px;
+  left: 0px; */
+/*  width: 548px; */
+/*  width: 558px; */
+  max-width: 558px;
+/*  width: 100%; */
+/*  height: 120px; */
+/*  overflow: hidden; */
+  overflow: auto;
+  margin: 10px 7px 10px 7px;
+  border: #a2a2a2 1px solid;
+/*  border-top: 0; */
+  background-color: #333333;
+  color: #a2a2a2;
+  padding: 4px 4px 5px 9px;
+  z-index: 3;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  color: #cccccc;
+  text-transform: lowercase;
+  margin: 0 0 3px;
+  padding: 0;
+}
+
+/* This style based on .text1TitleGrand from the original style sheet */
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaaaaa;
+  margin: 10px 0 0;
+}
+
+/* This style is basically just for the Pinter page... */
+.full-width {
+  width: 100%
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+dl {
+  margin: 0 0 3px;
+  padding: 0;
+}
+
+/* This style based on .text1Title from the original style sheet */
+dt {
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+  float: left;
+  clear: both;
+  width: 130px;
+/*  display: compact; */
+  margin: 0;
+  padding: 0;
+/*  background-color: red; */
+}
+
+/* Bit of a silly fudge, just to make sure things line up (on the Echo and Narcissus page) in IE */
+dt.treble-height {
+  height: 39px;
+}
+
+dd {
+  font-size: 11px;
+  display: block;
+/*  margin: 0 0 0 124px; */
+  width: 148px;
+  margin: 0;
+  float: right;
+/*  clear: right; */
+  padding: 0;
+/*  background-color: green; */
+}
+
+dt.double-height,
+dd.double-height {
+  line-height: 26px;
+}
+
+dl.full-width dd {
+  width: 141px;
+/*  float: left; */
+}
+
+.cast-and-crew .left {
+  float: left;
+  clear: left;
+  width: 278px;
+}
+
+.cast-and-crew .right {
+  float: right;
+/*  clear: right; */
+/* reduced width: from 288px to 276px */
+  width: 278px;
+}
+
+
+.production {
+  display: block;
+  position: relative;
+/*  position: absolute;
+  top: 139px;
+  left: 0px; */
+  margin: 10px 0 7px 7px;
+  width: 558px;
+/*  width: 548px; */
+  overflow: hidden;
+  border: #a2a2a2 1px solid;
+/*  border-bottom: 0; */
+  background-color: #333333;
+  color: #a2a2a2;
+  padding: 4px 4px 4px 9px;
+  z-index: 4;
+}
+
+.production h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  float: left; */
+/*  clear: left; */
+}
+
+.production p {
+  margin: 0 182px 13px 0;
+/*  float: left;
+  clear: left; */
+}
+
+q:before,
+q:after {
+/* 'cos IE doesn't seem to do content: :before or :after, I'm including the quotes in the html...*/
+/* So we need to stop Firefox, etc from showing them */
+  content: "";
+}
+
+blockquote {
+  display: block;
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-style: italic;
+}
+blockquote cite {
+  font-style: normal;
+}
+
+.production .images {
+  float: right;
+  margin: 1px 6px 0px 0px;
+  padding: 0;
+  width: 170px;
+/*  text-align: center; */
+}
+
+/*
+.production .image {
+  display: block;
+  margin: 0px 0px 10px 0px;
+  padding: 0;
+  width: 170px;
+  text-align: center;
+}
+*/
+
+.production .images img {
+  display: block;
+  border: #a2a2a2 1px solid;
+  background-color: #444444;
+  padding: 2px;
+  margin: 0 auto 10px;
+}
+
+.production .fbp-show,
+.production .non-fbp-show {
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.production .reviews,
+.production .reviews a {
+  font-weight: bold;
+  margin-top: 25px;
+  text-align: center;
+}

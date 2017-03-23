@@ -7,7 +7,7 @@
 /* (Should be text/x-component) */
 /* Might work to add the line "AddType text/x-component .htc" to an .htaccess file..? */
 body {
-  behavior: url(/csshover2.htc);
+  behavior: url(/assets/csshover2.htc);
 }
 
 

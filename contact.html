@@ -1,0 +1,49 @@
+---
+layout: default
+title: Contact Us - Fail Better Productions
+description: Send a message to Fail Better Productions.  For details about the company and our previous productions visit www.failbetter.co.uk
+menu-item: contact
+styles: ./contact.css
+---
+    <h1 class="hidden">Contact Us</h1>
+    <form method="post" action="https://formspree.io/failbetter-contact@dave.thwaites.org.uk">
+     <p>Your comments, suggestions and queries are important to us so if you would like to contact us then please complete the form below and we will respond as quickly as possible.</p>
+     <p>IMPORTANT: Please make sure your email address is correct so we can respond to you.</p>
+     <div class="name">
+      <label for="name">Name:</label>
+      <input name="name" id="name" type="text" size="35" maxlength="30" />
+     </div>
+     <div class="email">
+      <label for="email">Email Address:</label>
+      <input name="email" id="email" type="email" size="35" maxlength="60" />
+     </div>
+     <div class="subject">
+      <label for="_subject">Subject:</label>
+      <input name="_subject" id="subject" type="text" size="35" maxlength="60" />
+     </div>
+     <div class="howhear">
+      <label for="how did they hear about us">How did you hear about us?</label>
+      <select name="how did they hear about us" size="1">
+       <option value="(not selected)" selected="selected">-please select one-</option>
+       <option value="Saw A Performance">Saw a Performance</option>
+       <option value="Read A Review">Read a Review</option>
+       <option value="Word Of Mouth">Word of Mouth</option>
+<!--       <option value="Fail Better Ambassador">Fail Better Ambassador</option> -->
+       <option value="Production Publicity">Production Publicity</option>
+       <option value="CAPITAL">The CAPITAL Centre</option>
+       <option value="A7 Communications Site">A7 Communications Site</option>
+       <option value="Education Event">Education Event</option>
+       <option value="Facebook">Facebook</option>
+       <option value="Chance Find">Chance Find</option>
+      </select>
+     </div>
+     <div class="enquiry">
+      <label for="enquiry">Your Enquiry:</label>
+      <textarea name="enquiry" id="enquiry" cols="94" rows="12"></textarea>
+     </div>
+     <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/contact_done.html" />
+     <div class="buttons">
+      <input type="reset" id="reset" value="reset" />
+      <input type="submit" id="submit" value="submit" />
+     </div>
+    </form>

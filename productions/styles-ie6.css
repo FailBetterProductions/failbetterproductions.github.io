@@ -1,0 +1,12 @@
+/* Styles specific to the productions page (/productions/index.html) */
+/* CSS tweaks to make things look right in IE6 */
+
+dt a {
+  width: 148px;
+  height: 25px;
+}
+
+.go-button {
+  width: 49px;
+  height: 21px;
+}

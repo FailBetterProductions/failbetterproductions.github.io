@@ -1,0 +1,19 @@
+/* Styles specific to the production information pages (/productions/xxx/index.html) */
+/* CSS tweaks to get things to look right in IE6 */
+
+h1 {
+  height: 357px;
+/* Nasty, silly hack for IE6 this, but it seems to do the job... */
+/*  height: expression((document.getElementById('main-body').offsetHeight - 34) + 'px'); */
+  height: expression((body.childNodes[0].childNodes[0].offsetHeight - 44) + 'px');
+  width: 135px;
+}
+
+.cast-and-crew {
+  width: 563px;
+/*  height: 129px; */
+}
+
+.production {
+  width: 563px;
+}

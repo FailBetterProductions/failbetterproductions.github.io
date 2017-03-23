@@ -1,6 +1,8 @@
+---
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-GB" }}">
- {% include head.html %}
+{% include head.html %}
 <body>
 
 <div class="wrapper">
@@ -11,14 +13,18 @@
 
    <div class="content">
 {{ content }}
-   </div>
+{% if page.redirect %}    Redirecting you - please wait one moment...
+{% endif %}   </div>
+
 
 {% include menu.html %}
 
   </div>
  </div>
 
+
 {% include header.html %}
+
 
 {% include footer.html %}
 

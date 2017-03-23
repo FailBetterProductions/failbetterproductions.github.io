@@ -1,7 +1,36 @@
    <h2 class="menu">Menu</h2>
    <div class="menu"></div>
-   <ul class="menu home">
-    <li id="menu-home" class="selected"><strong>Home</strong></li>
+   <ul class="menu {{ page.menu-item }}{% if page.submenu-item %} submenu-item{% endif %}">
+<!-- layout.menu[0].text = '{{ layout.menu[0].text }}'
+     site.data.menu[0].text = '{{ site.data.menu[0].text }}'
+     site.github.url = '{{ site.github.url }}'
+     site.baseurl = '{{ site.baseurl }}'
+     page.path = '{{ page.path }}'
+     page.url = '{{ page.url }}'
+     page.url[0] = '{{ page.url[0] }}'{% assign link = page.url | split: "/" | compact %}
+     { % assign link = page.url | split: "/" | compact % }
+     link = '{{ link }}'
+     link.size = '{{ link.size }}'{% assign j = 0 %}{% for part in link %}
+     link[{{ j }}] = '{{ part }}'{% assign j = j | plus: 1 %}{% endfor %}
+     link = {% for part in link %}/'{{ part }}'{% endfor %}
+     link | join: "/" = {{ link | join: "/" }}
+-->{% for item in site.data.menu %}
+    <li id="menu-{{ item.id }}"{% if page.menu-item == item.id %} class="selected"{% elsif item.submenu %} class="has-submenu"{% endif %}{%if item.submenu %}>
+       {% else %}>{% endif %}{% capture item-full-url %}{{ site.baseurl }}{{ item.link.dir }}{{ item.link.file }}{% endcapture %}{% capture item-relative-url %}{{ item.link.dir }}{{ item.link.file }}{% endcapture %}{% if page.menu-item == item.id and page.submenu-item == nil %}<strong>{% elsif item.id == 'company' and page.menu-item == 'company' %}<span>{% elsif item-full-url != page.url %}<a href="{{ item-relative-url }}">{% else %}<span>{% endif %}{{ item.text }}{% if page.menu-item == item.id and page.submenu-item == nil %}</strong>{% elsif item.id == 'company' and page.menu-item == 'company' %}</span>{% elsif item.link != page.url %}</a>{% else %}</span>{% endif %}{% comment %}
+<!-- item.link.dir = '{{ item.link.dir }}'
+     item.link.dir[0] = '{{ item.link.dir[0] }}'
+     item.link.dir[1] = '{{ item.link.dir[1] }}'
+     item.link.file = '{{ item.link.file }}' -->{% endcomment %}{% if item.submenu %}
+       <div>
+        <ul class="sub-menu">{% for sub-item in item.submenu %}{% if sub-item.hidden != true or page.menu-item == item.id and page.submenu-item == sub-item.id %}
+         <li{% if page.menu-item == item.id and page.submenu-item == sub-item.id %} class="selected"{% endif %}>{% if page.menu-item == item.id and page.submenu-item == sub-item.id %}<strong>{% endif %}{% capture sub-item-full-url %}{{ site.baseurl }}{{ sub-item.link.dir }}{{ sub-item.link.file }}{% endcapture %}{% capture sub-item-relative-url %}{% if page.link.dir == sub-item.link.dir %}.{% else %}{{ sub-item.link.dir }}{% endif %}{{ sub-item.link.file }}{% endcapture %}{% if sub-item-full-url != page.url %}<a href="{{ sub-item-relative-url }}">{% endif %}{{ sub-item.text }}{% if sub-item.link != page.url %}</a>{% endif %}{% if page.menu-item == item.id and page.submenu-item == sub-item.id %}</strong>{% endif %}</li>{% endif %}{% endfor %}
+        </ul>
+       </div>{% endif %}{% if item.submenu %}
+    </li>{% else %}</li>{% endif %}{% endfor %}
+{% comment %}<!--
+    <li id="menu-home" class="selected">
+       <strong>Home</strong>
+    </li>
     <li id="menu-company" class="has-submenu">
        <a href="./company/team.html">Company</a>
        <div>
@@ -47,4 +76,5 @@
        </div>
     </li>
     <li id="menu-contact"><a href="./contact.php">Contact us</a></li>
-   </ul>
+-->
+{% endcomment %}   </ul>

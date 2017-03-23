@@ -182,13 +182,13 @@ h2.menu {
 /* When the company menu is selected, offset the Press sub-menu up by a small chunk so it stays in our main area */
 /* Offset is margin-top: -<number of items to move up by> * 26 */
 .menu.company li.has-submenu#menu-press div {
-/*  margin-top: -52px; */
+  margin-top: -52px;
 }
 
 /* When the company menu is selected, offset the Press sub-menu up by a small chunk so it stays in our main area */
 /* Offset is margin-top: -<number of items to move up by> * 26 */
 .menu.company li.has-submenu#menu-productions div {
-/*  margin-top: -26px; */
+  margin-top: -26px;
 }
 
 

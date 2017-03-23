@@ -1,0 +1,15 @@
+/* Styles specific to the Madman production information page (/productions/madman/index.html) */
+
+.core-team,
+.assistants,
+.previous-team {
+  width: 100%
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.core-team,
+.assistants {
+  margin-bottom: 10px;
+}

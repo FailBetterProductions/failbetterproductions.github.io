@@ -1,14 +1,13 @@
+
 <head>
- <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
  <meta charset="utf-8">
-<!--
+ <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title> <!--
  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
- <meta http-equiv="Content-Language" content="en-GB" />
--->
  <meta http-equiv="Content-Script-Type" content="text/javascript" />
- <meta name="description" content="Fail Better Productions is a growing collective of young theatre artists that strive for textually rich and visually arresting performance." />
- <meta name="language" content="en-GB" />
- <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
+ <meta http-equiv="Content-Language" content="en-GB" /> -->
+ <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}" />
+ <meta name="language" content="{{ page.lang | default: site.lang | default: "en-GB" }}" />
+ <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/vnd.microsoft.icon" />
  <meta name="author" content="Coding by Dave Thwaites - dave.thwaites.org.uk" />
  <!-- Originaly created by DRT (by hand!), Nov 2007 -->
  <!-- Some degree of auomatic creation added by DRT, Dec 2007 -->
@@ -16,20 +15,23 @@
  <meta name="rating" content="General" />
  <meta name="ROBOTS" content="ALL" />
  <meta name="Coverage" content="Worldwide" />
- <link href="./assets/global.css" rel="stylesheet" type="text/css" />
- <link href="./assets/menu.css" rel="stylesheet" type="text/css" />
- <link href="./styles.css" rel="stylesheet" type="text/css" />
- <!-- Styles specific to IE - mainly just to give us pretty scroll bars in IE without Firefox, etc complaining... -->
+ <link href="{{ site.baseurl }}/assets/global.css" rel="stylesheet" type="text/css" />
+ <link href="{{ site.baseurl }}/assets/menu.css" rel="stylesheet" type="text/css" />
+{% for style in page.styles %} <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% endfor %} <!-- Styles specific to IE - mainly just to give us pretty scroll bars in IE without Firefox, etc complaining... -->
  <!--[if IE]>
-  <link href="./assets/global-ie.css" rel="stylesheet" type="text/css" />
-  <link href="./styles-ie.css" rel="stylesheet" type="text/css" />
- <![endif]-->
+  <link href="{{ site.baseurl }}/assets/global-ie.css" rel="stylesheet" type="text/css" />
+{% for style in page.styles-ie %}  <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% endfor %} <![endif]-->
  <!-- Styles specific to making things work in IE 7... -->
  <!--[if lte IE 7]>
-  <link href="./assets/global-ie7.css" rel="stylesheet" type="text/css" />
- <![endif]-->
+  <link href="{{ site.baseurl }}/assets/global-ie7.css" rel="stylesheet" type="text/css" />
+{% for style in page.styles-ie7 %}  <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% endfor %} <![endif]-->
  <!-- Styles specific to making things work in IE 6... -->
  <!--[if lte IE 6]>
-  <link href="./assets/global-ie6.css" rel="stylesheet" type="text/css" />
- <![endif]-->
-</head>
+  <link href="{{ site.baseurl }}/assets/global-ie6.css" rel="stylesheet" type="text/css" />
+{% for style in page.styles-ie6 %}  <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% endfor %} <![endif]-->
+{% if page.redirect %}<!-- <meta http-equiv="refresh" content="0; url={{ page.redirect }}" />-->
+{% endif %}</head>

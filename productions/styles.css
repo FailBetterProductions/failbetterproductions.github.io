@@ -1,0 +1,128 @@
+/* Styles specific to the productions page (/productions/index.html) */
+
+.content {
+  font-size: 11px;
+}
+
+p.intro {
+  margin: 0px 0 0 0;
+  padding: 3px 0 0 0;
+}
+
+/* This style based on .text1TitleGrand from the original style sheet */
+.content h2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaaaaa;
+  text-align: right;
+  margin: 4px 0;
+  padding: 0;
+  border: #999999 solid;
+  border-width: 0 0 1px 0;
+}
+
+h2.archive {
+  border-top-width: 1px;
+  padding-top: 4px;
+}
+
+dl {
+  margin: 0 0px 0 0;
+  padding-top: 0px;
+  padding-right: 3px;
+  padding-bottom: 0px;
+  overflow: auto;
+}
+
+dl#current {
+/*  height: 140px; */
+}
+
+dl#archive {
+/*  height: 140px; */
+  margin-top: 10px;
+/*  height: 310px; */
+}
+
+dt {
+  display: block;
+  width: 148px;
+  height: 25px;
+  padding: 0px;
+  float: left;
+  margin: 1px 0px 0px 0px;
+  text-align: right;
+}
+
+dt a {
+  display: block;
+  width: 144px;
+  height: 22px;
+  padding-top: 3px;
+  padding-right: 4px;
+  background-repeat: no-repeat;
+}
+
+dt a {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+dt .smaller {
+  font-size: 12px;
+}
+
+dd {
+  margin-left: 150px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.go-button {
+  float: right;
+  display: block;
+  width: 42px;
+  height: 17px;
+  border: #999999 solid 1px;
+  background-color: #333333;
+  background-image: url("/assets/images/go-black.gif");
+  background-repeat: no-repeat;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+  padding-top: 2px;
+  padding-left: 5px;
+  margin-top: 3px;
+  color: #cccccc;
+}
+
+.go-button:hover {
+  background-image: url("/assets/images/go-green.gif");
+  background-repeat: no-repeat;
+}
+
+/* This style based on .text1Title from the original style sheet */
+h4 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* This style based on .text1Title from the original style sheet */
+h5,
+h5 a {
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+dd p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}

@@ -268,7 +268,8 @@ a:hover {
   display: block;
   width: 593px;
 /*  height: 363px; */
-  min-height: 363px;
+/*  min-height: 363px; */
+  min-height: 386px;
   padding: 2px 3px;
   border: #a2a2a2 solid 1px;
   background-color: #222222;
@@ -283,7 +284,8 @@ a:hover {
   margin: 0;
   width: 587px;
 /*  height: 357px; */
-  min-height: 357px;
+/*  min-height: 357px; */
+  min-height: 380px;
   padding: 2px;
   border: #a2a2a2 solid 1px;
   background-color: #222222;
@@ -291,7 +293,8 @@ a:hover {
 
 q:before,
 q:after {
-/* 'cos IE doesn't seem to do content: :before or :after, I'm including the quotes in the html...*/
+/* 'cos IE doesn't seem to do content: :before
+ or :after, I'm including the quotes in the html...*/
 /* So we need to stop Firefox, etc from showing them */
   content: "";
 }

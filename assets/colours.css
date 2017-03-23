@@ -2,6 +2,40 @@
 
 
 
+/* Fragments */
+dt#fragments a,
+h1#fragments {
+  background-color: #810303;
+  color: #cccccc;
+}
+
+dt#fragments a {
+  background-image: url("./images/red-title.gif");
+}
+
+h1#fragments {
+  background-image: url("./images/red-foot.gif");
+}
+
+
+
+/* Endlessness */
+dt#endlessness a,
+h1#endlessness {
+  background-color: #000000;
+  color: #cccccc;
+}
+
+dt#endlessness a {
+  background-image: url("./images/black-title.png");
+}
+
+h1#endlessness {
+  background-image: url("./images/black-foot.png");
+}
+
+
+
 /* Discords */
 dt#discords a,
 h1#discords {

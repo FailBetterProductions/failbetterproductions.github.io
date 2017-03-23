@@ -1,0 +1,222 @@
+- id: home
+  text: Home
+  link:
+    file: /
+- id: company
+  text: Company
+  link:
+    dir: /company
+    file: /team.html
+  submenu:
+    - id: team
+      text: Creative Team
+      link:
+        dir: /company
+        file: /team.html
+    - id: collaborators
+      text: Collaborators
+      link:
+        dir: /company
+        file: /collaborators.html
+    - id: history
+      text: History
+      link:
+        dir: /company
+        file: /history.html
+    - id: support
+      text: Support
+      link:
+        dir: /company
+        file: /support.html
+- id: residency
+  text: Residency
+  link:
+    dir: /residency
+    file: /
+- id: productions
+  text: Productions
+  link:
+    dir: /productions
+    file: /
+  submenu:
+    - id: fragments
+      text: Fragments
+      link:
+        dir:
+          - /productions
+          - /fragments
+        file: /
+    - id: endlessness
+      text: Endlessness
+      link:
+        dir:
+          - /productions
+          - /endlessness
+        file: /
+    - id: madman
+      text: Diary of a Madman
+      link:
+        dir:
+          - /productions
+          - /madman
+        file: /
+    - id: discords
+      text: Discords
+      link:
+        dir:
+          - /productions
+          - /discords
+        file: /
+    - id: stasis
+      text: Stasis
+      link:
+        dir:
+          - /productions
+          - /stasis
+        file: /
+    - id: persephone
+      text: Persephone
+      link:
+        dir:
+          - /productions
+          - /persephone
+        file: /
+    - id: lorca
+      text: Play Without a Title
+      link:
+        dir:
+          - /productions
+          - /lorca
+        file: /
+    - id: head
+      text: Head
+      link:
+        dir:
+          - /productions
+          - /head
+        file: /
+    - id: phadraslove
+      text: Phaedra's Love
+      link:
+        dir:
+          - /productions
+          - /phaedraslove
+        file: /
+    - id: echoandnarcissus
+      text: Echo &amp; Narcissus
+      link:
+        dir:
+          - /productions
+          - /echoandnarcissus
+        file: /
+    - id: crave
+      text: Crave
+      link:
+        dir:
+          - /productions
+          - /crave
+        file: /
+    - id: pinter
+      text: Pinter Double Bill
+      link:
+        dir:
+          - /productions
+          - /pinter
+        file: /
+      hidden: true
+- id: press
+  text: Press Room
+  link:
+    dir:
+      - /press
+    file: /
+  submenu:
+    - id: fragments
+      text: Fragments
+      link:
+        dir:
+          - /press
+          - /fragments
+        file: /
+    - id: endlessness
+      text: Endlessness
+      link:
+        dir:
+          - /press
+          - /endlessness
+        file: /
+    - id: madman
+      text: Diary of a Madman
+      link:
+        dir:
+          - /press
+          - /madman
+        file: /
+    - id: discords
+      text: Discords
+      link:
+        dir:
+          - /press
+          - /discords
+        file: /
+    - id: stasis
+      text: Stasis
+      link:
+        dir:
+          - /press
+          - /stasis
+        file: /
+    - id: persephone
+      text: Persephone
+      link:
+        dir:
+          - /press
+          - /persephone
+        file: /
+    - id: lorca
+      text: Play Without a Title
+      link:
+        dir:
+          - /press
+          - /lorca
+        file: /
+    - id: head
+      text: Head
+      link:
+        dir:
+          - /press
+          - /head
+        file: /
+    - id: phadraslove
+      text: Phaedra's Love
+      link:
+        dir:
+          - /press
+          - /phaedraslove
+        file: /
+    - id: echoandnarcissus
+      text: Echo &amp; Narcissus
+      link:
+        dir:
+          - /press
+          - /echoandnarcissus
+        file: /
+    - id: crave
+      text: Crave
+      link:
+        dir:
+          - /press
+          - /crave
+        file: /
+    - id: pinter
+      text: Pinter Double Bill
+      link:
+        dir:
+          - /press
+          - /pinter
+        file: /
+      hidden: true
+- id: contact
+  text: Contact us
+  link:
+    file: /contact.html
