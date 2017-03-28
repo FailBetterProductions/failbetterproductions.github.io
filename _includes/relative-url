@@ -1,0 +1,76 @@
+{% comment %}
+to do:
+- prepend site.baseurl to include.url
+- check include.url for leading '/'
+- check include.url for leading '.' (or '..'?)..?
+- simplify comparison - remove 'part2'
+{% endcomment %}{%
+   if page-url-dir == nil or page-url-file == nil %}{%
+     assign url = page.url | slice: 1,page.url.size | split: "/" %}{%
+     assign page-url-dir = "" | split: "," %}{%
+     assign url-tail = page.url | slice: -1 %}{%
+     for part in url %}{%
+       assign part2 = part | prepend: "/" %}{%
+       if forloop.last %}{%
+         if url-tail == "/" %}{%
+           assign page-url-dir = page-url-dir | push: part2 %}{%
+         else %}{%
+           assign page-url-file = part2 %}{%
+         endif %}{%
+       else %}{%
+         assign page-url-dir = page-url-dir | push: part2 %}{%
+       endif %}{%
+     endfor %}{%
+     if url-tail == "/" %}{%
+       assign page-url-file = "/" %}{%
+     endif %}{%
+   endif %}{%
+
+   assign url = include.url | slice: 1,include.url.size | split: "/" %}{%
+   assign url-dir = "" | split: "," %}{%
+   assign url-tail = include.url | slice: -1 %}{%
+   for part in url %}{%
+     assign part2 = part | prepend: "/" %}{%
+     if forloop.last %}{%
+       if url-tail == "/" %}{%
+         assign url-dir = url-dir | push: part2 %}{%
+       else %}{%
+         assign url-file = part2 %}{%
+       endif %}{%
+     else %}{%
+       assign url-dir = url-dir | push: part2 %}{%
+     endif %}{%
+   endfor %}{%
+   if url-tail == "/" %}{%
+     assign url-file = "/" %}{%
+   endif %}{%
+
+   if page-url-dir == url-dir
+     %}.{%
+   else %}{%
+     if page-url-dir[0] == url-dir[0] %}{%
+       if page-url-dir[1] == url-dir[1] %}{%
+         assign match = 2 %}{%
+       else %}{%
+         assign match = 1 %}{%
+       endif %}{%
+     else %}{%
+       assign match = 0 %}{%
+     endif %}{%
+     if match > page-url-dir.size %}{%
+       assign match = page-url-dir.size %}{%
+     endif %}{%
+     if match == page-url-dir.size
+       %}.{%
+     endif %}{%
+     for part in page-url-dir offset:match
+       %}..{%
+       unless forloop.last
+         %}/{%
+       endunless %}{%
+     endfor %}{%
+     for part in url-dir offset:match
+       %}{{part}}{%
+     endfor %}{%
+   endif
+%}{{ url-file }}
