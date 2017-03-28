@@ -1,0 +1,32 @@
+/* Styles specific to the Persephone production information page (/productions/persephone/index.html) */
+
+.crew {
+  margin: 0 0 15px;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.cast {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+
+.script {
+  font-style: italic;
+}
+
+.script .character {
+  display: block;
+  float: left;
+  clear: left;
+  margin: 0 0 3px;
+}
+
+.script .line {
+  display: block;
+  margin: 0 0 3px 80px;
+}
