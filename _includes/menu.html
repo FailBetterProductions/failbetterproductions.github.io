@@ -19,7 +19,7 @@
 {%      endfor %}{%
         if test == "/" %}
 {%        assign link-file = "/" %}
-{%      endif %}{% comment %}
+{%      endif %}
 <!-- layout.menu[0].text = '{{ layout.menu[0].text }}'
      site.data.menu[0].text = '{{ site.data.menu[0].text }}'
      site.github.url = '{{ site.github.url }}'
@@ -33,7 +33,7 @@
      link | join: "/" = {{ link | join: "/" }}
      link-dir[{{ link-dir.size }}] = [{% if link-dir.size > 0 %}'{{ link-dir | join: "', '" }}'{% endif %}]
      link-file = '{{ link-file }}'
--->{% endcomment %}{% for item in site.data.menu %}{%
+-->{% for item in site.data.menu %}{%
         capture item-full-url %}{{ site.baseurl }}{{ item.link.dir }}{{ item.link.file }}{% endcapture %}{%
         capture item-relative-url %}{% if link-dir == item.link.dir %}.{% else %}{% if link-dir[0] == item.link.dir[0] %}{% if link-dir[1] == item.link.dir[1] %}{% assign match = 2 %}{% else %}{% assign match = 1 %}{% endif %}{% else %}{% assign match = 0 %}{% endif %}{% if match > link-dir.size %}{% assign match = link-dir.size %}{% endif %}{% if link-dir.size == match %}.{% endif %}{% for part in link-dir offset:match %}..{% unless forloop.last %}/{% endunless %}{% endfor %}{% for part in item.link.dir offset:match %}{{part}}{% endfor %}{% endif %}{{ item.link.file }}{% endcapture %}
     <li id="menu-{{ item.id }}"{% if page.menu-item == item.id %} class="selected"{% elsif item.submenu %} class="has-submenu"{% endif %}{%if item.submenu %}>
