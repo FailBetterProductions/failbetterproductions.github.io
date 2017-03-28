@@ -17,21 +17,21 @@
  <meta name="Coverage" content="Worldwide" />
  <link href="{% include relative-url url='/css/global.css' %}" rel="stylesheet" type="text/css" />
  <link href="{% include relative-url url='/css/menu.css' %}" rel="stylesheet" type="text/css" />
-{% for style in page.styles %} <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% for style in page.styles %} <link href="{% include relative-url url=style %}" rel="stylesheet" type="text/css" />
 {% endfor %} <!-- Styles specific to IE - mainly just to give us pretty scroll bars in IE without Firefox, etc complaining... -->
  <!--[if IE]>
   <link href="{% include relative-url url='/css/global-ie.css' %}" rel="stylesheet" type="text/css" />
-{% for style in page.styles-ie %}  <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% for style in page.styles-ie %}  <link href="{% include relative-url url=style %}" rel="stylesheet" type="text/css" />
 {% endfor %} <![endif]-->
  <!-- Styles specific to making things work in IE 7... -->
  <!--[if lte IE 7]>
   <link href="{% include relative-url url='/css/global-ie7.css' %}" rel="stylesheet" type="text/css" />
-{% for style in page.styles-ie7 %}  <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% for style in page.styles-ie7 %}  <link href="{% include relative-url url=style %}" rel="stylesheet" type="text/css" />
 {% endfor %} <![endif]-->
  <!-- Styles specific to making things work in IE 6... -->
  <!--[if lte IE 6]>
   <link href="{% include relative-url url='/css/global-ie6.css' %}" rel="stylesheet" type="text/css" />
-{% for style in page.styles-ie6 %}  <link href="{{ style }}" rel="stylesheet" type="text/css" />
+{% for style in page.styles-ie6 %}  <link href="{% include relative-url url=style %}" rel="stylesheet" type="text/css" />
 {% endfor %} <![endif]-->
-{% if page.redirect %}<!-- <meta http-equiv="refresh" content="0; url={{ page.redirect }}" />-->
+{% if page.redirect %}<!-- <meta http-equiv="refresh" content="0; url={% include relative-url url=page.redirect %}" />-->
 {% endif %}</head>
