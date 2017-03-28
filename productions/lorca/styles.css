@@ -1,0 +1,23 @@
+/* Styles specific to the Lorca production information page (/productions/lorca/index.html) */
+
+.right dt {
+  width: 145px;
+}
+
+.right dd {
+  width: 133px;
+}
+
+.crew {
+  margin: 0 0 15px;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.cast {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
