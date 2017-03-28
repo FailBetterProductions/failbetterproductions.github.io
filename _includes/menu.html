@@ -1,8 +1,7 @@
    <h2 class="menu">Menu</h2>
    <div class="menu"></div>
    <ul class="menu {{ page.menu-item }}{% if page.submenu-item %} submenu-item{% endif %}">{% 
-        assign link = page.url | prepend: site.baseurl %}{%
-        assign link = link | slice: 1,link.size | split: "/" %}{%
+        assign link = page.url | slice: 1,page.url.size | split: "/" %}{%
         assign link-dir = "" | split: "," %}{%
         assign test = page.url | slice: -1 %}{%
         for part in link %}

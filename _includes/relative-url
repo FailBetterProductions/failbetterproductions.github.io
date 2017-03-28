@@ -1,6 +1,6 @@
 {% comment %}
 to do:
-- prepend site.baseurl to include.url
+- prepend site.baseurl to include.url - may not actually be necessary..?
 - check include.url for leading '/'
 - check include.url for leading '.' (or '..'?)..?
 - simplify comparison - remove 'part2'
