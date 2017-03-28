@@ -1,0 +1,20 @@
+/* Styles specific to the Discords production information page (/productions/discords/index.html) */
+
+ul.cast
+{
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+ul.cast li
+{
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
