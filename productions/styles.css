@@ -86,7 +86,7 @@ dd {
   height: 17px;
   border: #999999 solid 1px;
   background-color: #333333;
-  background-image: url("/assets/images/go-black.gif");
+  background-image: url("../images/go-black.gif");
   background-repeat: no-repeat;
   text-transform: lowercase;
   text-decoration: none;
@@ -99,7 +99,7 @@ dd {
 }
 
 .go-button:hover {
-  background-image: url("/assets/images/go-green.gif");
+  background-image: url("../images/go-green.gif");
   background-repeat: no-repeat;
 }
 

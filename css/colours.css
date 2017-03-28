@@ -10,11 +10,11 @@ h1#fragments {
 }
 
 dt#fragments a {
-  background-image: url("./images/red-title.gif");
+  background-image: url("../images/red-title.gif");
 }
 
 h1#fragments {
-  background-image: url("./images/red-foot.gif");
+  background-image: url("../images/red-foot.gif");
 }
 
 
@@ -27,11 +27,11 @@ h1#endlessness {
 }
 
 dt#endlessness a {
-  background-image: url("./images/black-title.png");
+  background-image: url("../images/black-title.png");
 }
 
 h1#endlessness {
-  background-image: url("./images/black-foot.png");
+  background-image: url("../images/black-foot.png");
 }
 
 
@@ -44,11 +44,11 @@ h1#discords {
 }
 
 dt#discords a {
-  background-image: url("./images/orange-title.gif");
+  background-image: url("../images/orange-title.gif");
 }
 
 h1#discords {
-  background-image: url("./images/orange-foot.gif");
+  background-image: url("../images/orange-foot.gif");
 }
 
 
@@ -63,11 +63,11 @@ h1#lorca {
 }
 
 dt#lorca a {
-  background-image: url("./images/red-title.gif");
+  background-image: url("../images/red-title.gif");
 }
 
 h1#lorca {
-  background-image: url("./images/red-foot.gif");
+  background-image: url("../images/red-foot.gif");
 }
 
 
@@ -80,11 +80,11 @@ h1#persephone {
 }
 
 dt#persephone a {
-  background-image: url("./images/orange-title.gif");
+  background-image: url("../images/orange-title.gif");
 }
 
 h1#persephone {
-  background-image: url("./images/orange-foot.gif");
+  background-image: url("../images/orange-foot.gif");
 }
 
 
@@ -98,11 +98,11 @@ h1#stasis {
 }
 
 dt#stasis a {
-  background-image: url("./images/green-title.gif");
+  background-image: url("../images/green-title.gif");
 }
 
 h1#stasis {
-  background-image: url("./images/green-foot.gif");
+  background-image: url("../images/green-foot.gif");
 }
 
 
@@ -116,11 +116,11 @@ h1#madman {
 }
 
 dt#madman a {
-  background-image: url("./images/white-title.gif");
+  background-image: url("../images/white-title.gif");
 }
 
 h1#madman {
-  background-image: url("./images/white-foot.gif");
+  background-image: url("../images/white-foot.gif");
 }
 
 
@@ -135,11 +135,11 @@ h1#head {
 }
 
 dt#head a {
-  background-image: url("./images/red-title.gif");
+  background-image: url("../images/red-title.gif");
 }
 
 h1#head {
-  background-image: url("./images/red-foot.gif");
+  background-image: url("../images/red-foot.gif");
 }
 
 
@@ -154,11 +154,11 @@ h1#phaedraslove {
 }
 
 dt#phaedraslove a {
-  background-image: url("./images/orange-title.gif");
+  background-image: url("../images/orange-title.gif");
 }
 
 h1#phaedraslove {
-  background-image: url("./images/orange-foot.gif");
+  background-image: url("../images/orange-foot.gif");
 }
 
 
@@ -173,11 +173,11 @@ h1#echoandnarcissus {
 }
 
 dt#echoandnarcissus a {
-  background-image: url("./images/green-title.gif");
+  background-image: url("../images/green-title.gif");
 }
 
 h1#echoandnarcissus {
-  background-image: url("./images/green-foot.gif");
+  background-image: url("../images/green-foot.gif");
 }
 
 
@@ -192,11 +192,11 @@ h1#crave {
 }
 
 dt#crave a {
-  background-image: url("./images/blue-title.gif");
+  background-image: url("../images/blue-title.gif");
 }
 
 h1#crave {
-  background-image: url("./images/blue-foot.gif");
+  background-image: url("../images/blue-foot.gif");
 }
 
 
@@ -211,9 +211,9 @@ h1#pinter {
 }
 
 dt#pinter a {
-  background-image: url("./images/white-title.gif");
+  background-image: url("../images/white-title.gif");
 }
 
 h1#pinter {
-  background-image: url("./images/white-foot.gif");
+  background-image: url("../images/white-foot.gif");
 }

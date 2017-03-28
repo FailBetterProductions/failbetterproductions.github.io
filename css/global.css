@@ -53,7 +53,7 @@ a:hover {
 /* Layout of page header */
 .header-shadow {
   background-color: #a7a7a7;
-  background-image: url("./images/header-background.png");
+  background-image: url("../images/header-background.png");
   background-repeat: no-repeat;
   display: block;
   width : 788px;
@@ -70,7 +70,7 @@ a:hover {
 
 .header {
   background-color: #000000;
-  background-image: url("./images/header-background.png");
+  background-image: url("../images/header-background.png");
   background-repeat: no-repeat;
   width : 778px;
   height: 83px;
@@ -83,8 +83,8 @@ a:hover {
 .company-logo {
 /*  background-color: #000080; */
   background-color: #212B84;
-/*  background-image: url("./images/logo-background.png"); */
-  background-image: url("./images/header-background.png");
+/*  background-image: url("../images/logo-background.png"); */
+  background-image: url("../images/header-background.png");
   background-position: -15px -15px;
   background-repeat: no-repeat;
   position: absolute;
@@ -99,8 +99,8 @@ a:hover {
 
 .company-logo .fail-better {
   background-color: #999999;
-/*  background-image: url("./images/fail-better-background.png"); */
-  background-image: url("./images/header-background.png");
+/*  background-image: url("../images/fail-better-background.png"); */
+  background-image: url("../images/header-background.png");
   background-position: -24px -28px;
   background-repeat: no-repeat;
   position: absolute;
@@ -198,7 +198,7 @@ a:hover {
   margin-top: 118px;
   margin-bottom: 30px;
   background-color: #a7a7a7;
-  background-image: url("./images/shadow-mid.png");
+  background-image: url("../images/shadow-mid.png");
   background-repeat: repeat-y;
 }
 
@@ -217,14 +217,14 @@ a:hover {
 }
 
 .main-body-shadow-top {
-  background-image: url("./images/shadow-top-body.png");
+  background-image: url("../images/shadow-top-body.png");
   height: 10px;
   top: 0px;
 }
 
 /*
 .main-body-shadow-mid {
-  background-image: url("./images/shadow-mid.png");
+  background-image: url("../images/shadow-mid.png");
   background-repeat: repeat-y;
   top: 10px;
   bottom: 10px;
@@ -232,7 +232,7 @@ a:hover {
 */
 
 .main-body-shadow-bottom {
-  background-image: url("./images/shadow-bottom.png");
+  background-image: url("../images/shadow-bottom.png");
   height: 10px;
   bottom: 0px;
 }
@@ -325,7 +325,7 @@ q:after {
 /*
 .footer a.design-by {
   padding: 11px 0 11px 39px;
-  background-image: url("./images/SiteTag_BGaaaaaa.gif");
+  background-image: url("../images/SiteTag_BGaaaaaa.gif");
   background-repeat: no-repeat;
   background-position: left center;
 }
