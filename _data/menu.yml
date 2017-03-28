@@ -5,38 +5,45 @@
 - id: company
   text: Company
   link:
-    dir: /company
+    dir:
+      - /company
     file: /team.html
   submenu:
     - id: team
       text: Creative Team
       link:
-        dir: /company
+        dir:
+          - /company
         file: /team.html
     - id: collaborators
       text: Collaborators
       link:
-        dir: /company
+        dir:
+          - /company
         file: /collaborators.html
     - id: history
       text: History
       link:
-        dir: /company
+        dir:
+          - /company
         file: /history.html
     - id: support
       text: Support
       link:
-        dir: /company
+        dir:
+          - /company
         file: /support.html
 - id: residency
   text: Residency
   link:
-    dir: /residency
+    dir:
+      - /residency
     file: /
 - id: productions
   text: Productions
   link:
-    dir: /productions
+    dir:
+      - /productions
     file: /
   submenu:
     - id: fragments
