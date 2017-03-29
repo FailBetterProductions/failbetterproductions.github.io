@@ -1,0 +1,67 @@
+---
+layout: default
+---
+    <div class="sub-content">
+{% if page.show.title %}     <h1{% if page.show.id %} id="{{ page.show.id }}"{% endif %}{% if page.show.class %} class="{{ page.show.class }}"{% endif %}>{{ page.show.title }}</h1>
+{% endif %}{% if page.show.author %}     <h2>{{ page.show.author }}</h2>
+{% endif %}
+      <div class="press-pack">
+       <h3>Press Pack</h3>
+{% if page.press-pack %}       <a href="./{{ page.press-pack }}" target="_blank" class="download" title="download available">Download</a>
+{% else %}       <span class="download" title="download not available">Download</span>
+{% endif %}      </div>
+
+      <div class="press-release">
+       <h3>Press Release</h3>
+{% if page.press-release %}       <a href="./{{ page.press-release }}" target="_blank" class="download" title="download available">Download</a>
+{% else %}       <span class="download" title="download not available">Download</span>
+{% endif %}      </div>
+
+      <div class="flyer">
+       <h3>Flyer</h3>
+{% if page.flyer %}       <a href="./{{ page.flyer }}" target="_blank" class="download" title="download available">Download</a>
+{% else %}       <span class="download" title="download not available">Download</span>
+{% endif %}      </div>
+
+      <div class="reviews">
+       <h3>Reviews</h3>
+{% if page.reviews %}       <a href="./{{ page.reviews }}" target="_blank" class="download" title="download available">Download</a>
+{% else %}       <span class="download" title="download not available">Download</span>
+{% endif %}      </div>
+
+      <div class="gallery">
+       <h3>Gallery</h3>
+{{ content }}
+
+      </div>
+
+     <div class="howto" id="howto">
+      <h3><span class="title">How to use the Fail Better archives</span><span class="icon">?</span></h3>
+      <div class="break"></div>
+      <dl class="left">
+       <dt>
+        <span class="preview-text" title="preview">Prev<span class="hidden">iew</span></span>
+        <span class="preview" title="preview"></span>
+       </dt>
+       <dd>Launch a preview of an item</dd>
+       <dt>
+        <span class="download-text" title="download">Down<span class="hidden">load</span></span>
+        <span class="download" title="download"></span>
+       </dt>
+       <dd>Download the full version of an item</dd>
+      </dl>
+      <dl class="right">
+       <dt>
+        <a href="#howto" onclick="return false;" class="download-text" title="download available">Down<span class="hidden">load</span></a>
+        <a href="#howto" onclick="return false;" class="download" title="download available"></a>
+       </dt>
+       <dd>Indicates the item is available</dd>
+       <dt>
+        <span class="download-text" title="download not available">Down<span class="hidden">load</span></span>
+        <span class="download" title="download not available"></span>
+       </dt>
+       <dd>Indicates the item is currently unavailable</dd>
+      </dl>
+     </div>
+
+    </div>
