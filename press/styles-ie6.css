@@ -1,0 +1,22 @@
+/* Styles specific to the press room page (/press/index.html) */
+/* CSS tweaks to make things look right in IE6 */
+
+div.adobereader {
+  width: 206px;
+}
+
+dt a {
+  width: 148px;
+  height: 25px;
+}
+
+.go-button {
+  width: 49px;
+  height: 21px;
+}
+
+/* Silly patch to stop IE6 stretching the contect box down */
+/* (in order to accomadate the bottom margin of the last paragraph) */
+.outro {
+  margin-bottom: -12px;
+}

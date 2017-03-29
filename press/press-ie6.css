@@ -1,0 +1,90 @@
+/* Styles specific to the production information pages (/press/xxx/index.html) */
+/* CSS tweaks to make things look right in IE6 */
+
+h1 {
+  width: 135px;
+  height: 411px;
+/* Nasty, silly hack for IE6 this, but it seems to do the job... */
+/*  height: expression((document.getElementById('main-body').offsetHeight - 34) + 'px'); */
+  height: expression((body.childNodes[0].childNodes[0].offsetHeight - 44) + 'px');
+}
+
+/* .border, */
+.press-pack,
+.press-release,
+.flyer,
+.reviews,
+.gallery,
+.howto {
+/* minimum for 3 photos accross: IE: 505px, Firefox 509px */
+/*  width: 532px; - with vertical scrollbar */
+  width: 552px;
+}
+
+.press-pack {
+  height: 29px;
+}
+
+.press-release,
+.flyer,
+.reviews {
+  height: 30px;
+}
+
+.press-pack .download,
+.press-release .download,
+.flyer .download,
+.reviews .download {
+  width: 110px;
+  height: 21px;
+}
+
+/* Okay, for some reason IE6 seems to be doubling the left margins of items that are floated left... Odd... */
+h4 {
+  margin-left: 6px;
+}
+
+/* ...And the right margins of items that are floated right... Very odd!.. */
+.photo-credit {
+  margin-right: 5px;
+}
+
+/* More specifically, it seems to be the first item on a given line... */
+.photos {
+  margin-left: -10px;
+}
+
+.photo .preview,
+.photo .preview-text,
+.photo .download,
+.photo .download-text {
+  height: 20px;
+  width: 32px;
+}
+
+.photo .frame {
+  height: 82px;
+  width: 144px;
+}
+
+.howto {
+  height: 57px;
+}
+
+.howto .icon {
+  height: 15px;
+  width: 16px;
+}
+
+.howto dl dt .preview-text,
+.howto dl dt .download-text,
+.howto dl dt .preview,
+.howto dl dt .download {
+  width: 29px;
+  height: 14px;
+  padding-bottom: 0px;
+}
+
+.howto dl {
+  margin-bottom: -1px;
+}

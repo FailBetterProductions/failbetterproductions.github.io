@@ -1,0 +1,33 @@
+<html>
+<head>
+ <!--
+ This code is part of a Pop-up image Script that is
+ available at http://www.crays.com/jsc
+ --->
+ <script Language="JavaScript">
+ <!--
+ document.write(" <title>"+window.opener.picTitle+"</title>")
+
+ function fabricatePage(){
+   var htmlStr = 
+     '<html><head><title>' + window.opener.picTitle + '</title></head>'
+   + '<body background="./' + window.opener.dir + '/' + window.opener.pic + '" style="background-repeat: no-repeat; background-position: center"></body></html>'
+   document.open()
+   document.write(htmlStr)
+   document.close()
+   }
+ //-->
+ </script>
+</head>
+<body bgcolor="#CCCCCC" onLoad="fabricatePage()">
+ <script Language="JavaScript">
+ <!--
+   if(!window.opener.foundit){
+     document.write("Loading Picture...<br />")
+     document.write('<img src="./' + window.opener.dir + '/' + window.opener.pic + '" width="100%" height="80%" alt="' + window.opener.picTitle + '" />')
+     document.close()
+     } 
+ //-->
+ </script>
+</body>
+</html>
