@@ -3,10 +3,13 @@ to do:
 - prepend site.baseurl to include.url - may not actually be necessary..?
 - check include.url for leading '/' - done
 - check include.url for leading '.' (or '..'?)..? - not necessary if we check for leading '/'
+- add flag to return an absolute url (eg. for 404 page) - done
 - simplify comparison - remove 'part2'
 {% endcomment %}{%
  assign url-head = include.url | slice: 0 %}{%
- if url-head == "/" %}{%
+ if page.keepabsoluteurls
+   %}{{site.baseurl}}{{include.url}}{%
+ elsif url-head == "/" %}{%
    if page-url-dir == nil or page-url-file == nil %}{%
      assign url = page.url | slice: 1,page.url.size | split: "/" %}{%
      assign page-url-dir = "" | split: "," %}{%
