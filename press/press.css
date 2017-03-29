@@ -317,6 +317,7 @@ h4 {
 
 .photo .thumb img {
   vertical-align: middle;
+  margin: 0 0 3px;
 }
 
 .photo .preview {
