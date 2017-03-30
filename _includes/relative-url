@@ -2,13 +2,19 @@
 to do:
 - prepend site.baseurl to include.url - may not actually be necessary..?
 - check include.url for leading '/' - done
-- check include.url for leading '.' (or '..'?)..? - not necessary if we check for leading '/'
+- check include.url for leading '.' (or '..'?)..? - done
+- if neither leading '/' nor '.' then link is relative to current directory - add a leading './' ..? - done
 - add flag to return an absolute url (eg. for 404 page) - done
+ - ah, but only prefix site.baseurl if include.url has a leading '/' - otherwise url is already relative - done
 - simplify comparison - remove 'part2'
 {% endcomment %}{%
  assign url-head = include.url | slice: 0 %}{%
- if page.keepabsoluteurls
-   %}{{site.baseurl}}{{include.url}}{%
+ if page.keepabsoluteurls %}{%
+   if url-head == "/"
+     %}{{site.baseurl}}{{include.url}}{%
+   else
+     %}{{include.url}}{%
+   endif %}{%
  elsif url-head == "/" %}{%
    if page-url-dir == nil or page-url-file == nil %}{%
      assign url = page.url | slice: 1,page.url.size | split: "/" %}{%
@@ -80,6 +86,8 @@ to do:
    endif
    
    %}{{ url-file }}{%
- else
+ elsif url-head == "."
    %}{{include.url}}{%
+ else
+   %}./{{include.url}}{%
  endif %}
