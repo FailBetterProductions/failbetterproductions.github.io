@@ -15,11 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Fail Better Productions
 #email: your-email@domain.com
-#description: > # this means to ignore newlines until "baseurl:"
-#  Fail Better Productions is a collective of theatre artists that strive for
-#  textually rich and visually arresting performance.
-#description: Fail Better Productions is a collective of theatre artists that strive for textually rich and visually arresting performance.
-description: Fail Better Productions is a growing collective of young theatre artists that strive for textually rich and visually arresting performance.
+description: Fail Better Productions is a collective of theatre artists that strive for textually rich and visually arresting performance.
+#description: Fail Better Productions is a growing collective of young theatre artists that strive for textually rich and visually arresting performance.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
