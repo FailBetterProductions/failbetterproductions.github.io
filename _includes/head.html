@@ -31,6 +31,7 @@
   <link href="{% include relative-url url='/css/global-ie6.css' %}" rel="stylesheet" type="text/css" />
 {% for style in page.styles-ie6 %}  <link href="{% include relative-url url=style %}" rel="stylesheet" type="text/css" />
 {% endfor %} <![endif]-->
-{% if page.popup-script %}{% include popup-script.js %}
-{% endif %}{% if page.redirect %}<!-- <meta http-equiv="refresh" content="0; url={% include relative-url url=page.redirect %}" />-->
-{% endif %}</head>
+{% if page.redirect %} <meta http-equiv="refresh" content="0; url={% include relative-url url=page.redirect %}" />
+{% else %}{% if page.popup-script %}{% include popup-script.js %}
+{% endif %}{% if jekyll.environment == 'production' and site.google_analytics %}{% include google-analytics.html %}
+{% endif %}{% endif %}</head>
