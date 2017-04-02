@@ -226,4 +226,4 @@
 - id: contact
   text: Contact us
   link:
-    file: /contact.html
+    file: /contact/

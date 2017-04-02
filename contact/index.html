@@ -3,7 +3,7 @@ layout: default
 title: Contact Us - Fail Better Productions
 description: Send a message to Fail Better Productions.  For details about the company and our previous productions visit www.failbetter.co.uk
 menu-item: contact
-styles: ./contact.css
+styles: ./styles.css
 ---
     <h1 class="hidden">Contact Us</h1>
     <form method="post" action="https://formspree.io/failbetter-contact@dave.thwaites.org.uk">
@@ -41,7 +41,7 @@ styles: ./contact.css
       <label for="enquiry">Your Enquiry:</label>
       <textarea name="enquiry" id="enquiry" cols="94" rows="12"></textarea>
      </div>
-     <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/contact_done.html" />
+     <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/contact/done.html" />
      <div class="buttons">
       <input type="reset" id="reset" value="reset" />
       <input type="submit" id="submit" value="submit" />
