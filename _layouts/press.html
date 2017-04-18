@@ -5,35 +5,34 @@ layout: default
 {% if page.show.title %}     <h1{% if page.show.id %} id="{{ page.show.id }}"{% endif %}{% if page.show.class %} class="{{ page.show.class }}"{% endif %}>{{ page.show.title }}</h1>
 {% endif %}{% if page.show.author %}     <h2>{{ page.show.author }}</h2>
 {% endif %}
-      <div class="press-pack">
-       <h3>Press Pack</h3>
-{% if page.press-pack %}       <a href="{% include relative-url url=page.press-pack %}" target="_blank" class="download" title="download available">Download</a>
-{% else %}       <span class="download" title="download not available">Download</span>
-{% endif %}      </div>
+     <div class="press-pack">
+      <h3>Press Pack</h3>
+{% if page.press-pack %}      <a href="{% include relative-url url=page.press-pack %}" target="_blank" class="download" title="download available">Download</a>
+{% else %}      <span class="download" title="download not available">Download</span>
+{% endif %}     </div>
 
-      <div class="press-release">
-       <h3>Press Release</h3>
-{% if page.press-release %}       <a href="{% include relative-url url=page.press-release %}" target="_blank" class="download" title="download available">Download</a>
-{% else %}       <span class="download" title="download not available">Download</span>
-{% endif %}      </div>
+     <div class="press-release">
+      <h3>Press Release</h3>
+{% if page.press-release %}      <a href="{% include relative-url url=page.press-release %}" target="_blank" class="download" title="download available">Download</a>
+{% else %}      <span class="download" title="download not available">Download</span>
+{% endif %}     </div>
 
-      <div class="flyer">
-       <h3>Flyer</h3>
-{% if page.flyer %}       <a href="{% include relative-url url=page.flyer %}" target="_blank" class="download" title="download available">Download</a>
-{% else %}       <span class="download" title="download not available">Download</span>
-{% endif %}      </div>
+     <div class="flyer">
+      <h3>Flyer</h3>
+{% if page.flyer %}      <a href="{% include relative-url url=page.flyer %}" target="_blank" class="download" title="download available">Download</a>
+{% else %}      <span class="download" title="download not available">Download</span>
+{% endif %}     </div>
 
-      <div class="reviews">
-       <h3>Reviews</h3>
-{% if page.reviews %}       <a href="{% include relative-url url=page.reviews %}" target="_blank" class="download" title="download available">Download</a>
-{% else %}       <span class="download" title="download not available">Download</span>
-{% endif %}      </div>
+     <div class="reviews">
+      <h3>Reviews</h3>
+{% if page.reviews %}      <a href="{% include relative-url url=page.reviews %}" target="_blank" class="download" title="download available">Download</a>
+{% else %}      <span class="download" title="download not available">Download</span>
+{% endif %}     </div>
 
-      <div class="gallery">
-       <h3>Gallery</h3>
+     <div class="gallery">
+      <h3>Gallery</h3>
 {{ content }}
-
-      </div>
+     </div>
 
      <div class="howto" id="howto">
       <h3><span class="title">How to use the Fail Better archives</span><span class="icon">?</span></h3>
